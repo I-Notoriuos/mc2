@@ -1,61 +1,67 @@
-2024/05/11 21:57:48 logtail started
-2024/05/11 21:57:48 Program starting: v1.62.0-tdf4d4ebd4-gd0454003c, Go 1.22.1: []string{"./tailscaled"}
-2024/05/11 21:57:48 LogID: 46baa43f439448a10d2019144b26a50fe0aa6ee87a47eea0a0615a4a6f98e9bf
-2024/05/11 21:57:48 logpolicy: using system state directory "/var/lib/tailscale"
-2024/05/11 21:57:48 wgengine.NewUserspaceEngine(tun "tailscale0") ...
-2024/05/11 21:57:48 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
-2024/05/11 21:57:48 dns: [rc=resolved resolved=not-in-use ret=direct]
-2024/05/11 21:57:48 dns: using "direct" mode
-2024/05/11 21:57:48 dns: using *dns.directManager
-2024/05/11 21:57:48 link state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[172.16.5.4/24 llu6]} v4=true v6=false}
-2024/05/11 21:57:48 onPortUpdate(port=35139, network=udp6)
-2024/05/11 21:57:48 router: using firewall mode pref 
-2024/05/11 21:57:48 router: default choosing iptables
-2024/05/11 21:57:48 router: ipv6 unavailable due to missing filter table: running [/usr/sbin/ip6tables -t filter -S --wait]: exit status 3: ip6tables v1.8.4 (legacy): can't initialize ip6tables table `filter': Table does not exist (do you need to insmod?)
+2024/05/11 22:19:47 logtail started
+2024/05/11 22:19:47 Program starting: v1.62.0-tdf4d4ebd4-gd0454003c, Go 1.22.1: []string{"./tailscaled"}
+2024/05/11 22:19:47 LogID: 46baa43f439448a10d2019144b26a50fe0aa6ee87a47eea0a0615a4a6f98e9bf
+2024/05/11 22:19:47 logpolicy: using system state directory "/var/lib/tailscale"
+2024/05/11 22:19:47 wgengine.NewUserspaceEngine(tun "tailscale0") ...
+2024/05/11 22:19:47 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2024/05/11 22:19:47 dns: [rc=resolved resolved=not-in-use ret=direct]
+2024/05/11 22:19:47 dns: using "direct" mode
+2024/05/11 22:19:47 dns: using *dns.directManager
+2024/05/11 22:19:47 link state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[172.16.5.4/24 llu6]} v4=true v6=false}
+2024/05/11 22:19:47 onPortUpdate(port=54783, network=udp6)
+2024/05/11 22:19:47 router: using firewall mode pref 
+2024/05/11 22:19:47 router: default choosing iptables
+2024/05/11 22:19:47 router: ipv6 unavailable due to missing filter table: running [/usr/sbin/ip6tables -t filter -S --wait]: exit status 3: ip6tables v1.8.4 (legacy): can't initialize ip6tables table `filter': Table does not exist (do you need to insmod?)
 Perhaps ip6tables or your kernel needs to be upgraded.
-2024/05/11 21:57:48 router: v6filter = false, v6nat = false
-2024/05/11 21:57:48 onPortUpdate(port=41565, network=udp4)
-2024/05/11 21:57:48 magicsock: disco key = d:95b05a187b7b9b65
-2024/05/11 21:57:48 Creating WireGuard device...
-2024/05/11 21:57:48 Bringing WireGuard device up...
-2024/05/11 21:57:48 Bringing router up...
-2024/05/11 21:57:48 external route: up
-2024/05/11 21:57:48 Clearing router settings...
-2024/05/11 21:57:48 Starting network monitor...
-2024/05/11 21:57:48 Engine created.
-2024/05/11 21:57:48 pm: using backend prefs for "profile-35b5": Prefs{ra=false dns=true want=true routes=[] nf=on update=on Persist{lm=, o=, n=[6bDq/] u="Ian9Franco@github"}}
-2024/05/11 21:57:48 logpolicy: using system state directory "/var/lib/tailscale"
-2024/05/11 21:57:48 got LocalBackend in 22ms
-2024/05/11 21:57:48 Start
-2024/05/11 21:57:48 Backend: logs: be:46baa43f439448a10d2019144b26a50fe0aa6ee87a47eea0a0615a4a6f98e9bf fe:
-2024/05/11 21:57:48 control: client.Login(false, 0)
-2024/05/11 21:57:48 health("overall"): error: not in map poll
-2024/05/11 21:57:48 control: doLogin(regen=false, hasUrl=false)
-2024/05/11 21:57:49 control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]
-2024/05/11 21:57:49 control: RegisterReq: onode= node=[6bDq/] fup=false nks=false
-2024/05/11 21:57:49 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=true; authURL=false
-2024/05/11 21:57:49 control: netmap: got new dial plan from control
-2024/05/11 21:57:49 active login: Ian9Franco@github
-2024/05/11 21:57:49 Switching ipn state NoState -> Starting (WantRunning=true, nm=true)
-2024/05/11 21:57:49 monitor: gateway and self IP changed: gw=172.16.5.1 self=172.16.5.4
-2024/05/11 21:57:49 magicsock: SetPrivateKey called (init)
-2024/05/11 21:57:49 wgengine: Reconfig: configuring userspace WireGuard config (with 0/3 peers)
-2024/05/11 21:57:49 wgengine: Reconfig: configuring router
-2024/05/11 21:57:49 wgengine: Reconfig: configuring DNS
-2024/05/11 21:57:49 dns: Set: {DefaultResolvers:[] Routes:{taile01b8b.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[taile01b8b.ts.net.] Hosts:4}
-2024/05/11 21:57:49 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:4 LocalDomains:[taile01b8b.ts.net.]+65arpa, cloud="azure"}
-2024/05/11 21:57:49 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[taile01b8b.ts.net. ill51iuqxo1e1cw4vt5hldsvyc.cx.internal.cloudapp.net.] }
-2024/05/11 21:57:49 rename of "/etc/resolv.conf" to "/etc/resolv.pre-tailscale-backup.conf" failed (rename /etc/resolv.conf /etc/resolv.pre-tailscale-backup.conf: device or resource busy), falling back to copy+delete
-2024/05/11 21:57:49 restarted resolved after 1ms
-2024/05/11 21:57:49 peerapi: serving on http://100.125.205.98:35686
-2024/05/11 21:57:49 peerapi: failed to do peerAPI listen, harmless (netstack available) but error was: listen tcp6 [fd7a:115c:a1e0::fd01:cd62]:0: bind: cannot assign requested address
-2024/05/11 21:57:49 peerapi: serving on http://[fd7a:115c:a1e0::fd01:cd62]:1
-2024/05/11 21:57:49 magicsock: home is now derp-1 (nyc)
-2024/05/11 21:57:49 magicsock: adding connection to derp-1 for home-keep-alive
-2024/05/11 21:57:49 control: NetInfo: NetInfo{varies=false hairpin=false ipv6=false ipv6os=true udp=true icmpv4=false derp=#1 portmap= link="" firewallmode="ipt-default"}
-2024/05/11 21:57:49 magicsock: 1 active derp conns: derp-1=cr0s,wr0s
-2024/05/11 21:57:49 Switching ipn state Starting -> Running (WantRunning=true, nm=true)
-2024/05/11 21:57:49 derphttp.Client.Connect: connecting to derp-1 (nyc)
-2024/05/11 21:57:49 magicsock: endpoints changed: 172.176.130.136:1025 (stun), 172.16.5.4:41565 (local), 172.17.0.1:41565 (local)
-2024/05/11 21:57:49 magicsock: derp-1 connected; connGen=1
-2024/05/11 21:57:49 health("overall"): ok
+2024/05/11 22:19:47 router: v6filter = false, v6nat = false
+2024/05/11 22:19:47 onPortUpdate(port=35465, network=udp4)
+2024/05/11 22:19:47 magicsock: disco key = d:83da3b931a578bd7
+2024/05/11 22:19:47 Creating WireGuard device...
+2024/05/11 22:19:47 Bringing WireGuard device up...
+2024/05/11 22:19:47 Bringing router up...
+2024/05/11 22:19:47 external route: up
+2024/05/11 22:19:47 Clearing router settings...
+2024/05/11 22:19:47 Starting network monitor...
+2024/05/11 22:19:47 Engine created.
+2024/05/11 22:19:47 pm: using backend prefs for "profile-35b5": Prefs{ra=false dns=true want=true routes=[] nf=on update=on Persist{lm=, o=, n=[6bDq/] u="Ian9Franco@github"}}
+2024/05/11 22:19:47 logpolicy: using system state directory "/var/lib/tailscale"
+2024/05/11 22:19:47 got LocalBackend in 36ms
+2024/05/11 22:19:47 Start
+2024/05/11 22:19:47 Backend: logs: be:46baa43f439448a10d2019144b26a50fe0aa6ee87a47eea0a0615a4a6f98e9bf fe:
+2024/05/11 22:19:47 control: client.Login(false, 0)
+2024/05/11 22:19:47 health("overall"): error: not in map poll
+2024/05/11 22:19:47 control: doLogin(regen=false, hasUrl=false)
+2024/05/11 22:19:48 control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]
+2024/05/11 22:19:48 control: RegisterReq: onode= node=[6bDq/] fup=false nks=false
+2024/05/11 22:19:48 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=true; authURL=false
+2024/05/11 22:19:48 control: netmap: got new dial plan from control
+2024/05/11 22:19:48 active login: Ian9Franco@github
+2024/05/11 22:19:48 Switching ipn state NoState -> Starting (WantRunning=true, nm=true)
+2024/05/11 22:19:48 magicsock: SetPrivateKey called (init)
+2024/05/11 22:19:48 wgengine: Reconfig: configuring userspace WireGuard config (with 0/3 peers)
+2024/05/11 22:19:48 wgengine: Reconfig: configuring router
+2024/05/11 22:19:48 monitor: gateway and self IP changed: gw=172.16.5.1 self=172.16.5.4
+2024/05/11 22:19:48 wgengine: Reconfig: configuring DNS
+2024/05/11 22:19:48 dns: Set: {DefaultResolvers:[] Routes:{taile01b8b.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[taile01b8b.ts.net.] Hosts:4}
+2024/05/11 22:19:48 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:4 LocalDomains:[taile01b8b.ts.net.]+65arpa, cloud="azure"}
+2024/05/11 22:19:48 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[taile01b8b.ts.net. wz5sg2upko1elglxj1jfsjxscg.cx.internal.cloudapp.net.] }
+2024/05/11 22:19:48 rename of "/etc/resolv.conf" to "/etc/resolv.pre-tailscale-backup.conf" failed (rename /etc/resolv.conf /etc/resolv.pre-tailscale-backup.conf: device or resource busy), falling back to copy+delete
+2024/05/11 22:19:48 restarted resolved after 1ms
+2024/05/11 22:19:48 peerapi: serving on http://100.125.205.98:35686
+2024/05/11 22:19:48 peerapi: failed to do peerAPI listen, harmless (netstack available) but error was: listen tcp6 [fd7a:115c:a1e0::fd01:cd62]:0: bind: cannot assign requested address
+2024/05/11 22:19:48 peerapi: serving on http://[fd7a:115c:a1e0::fd01:cd62]:1
+2024/05/11 22:19:48 magicsock: home is now derp-1 (nyc)
+2024/05/11 22:19:48 magicsock: adding connection to derp-1 for home-keep-alive
+2024/05/11 22:19:48 control: NetInfo: NetInfo{varies=false hairpin=false ipv6=false ipv6os=true udp=true icmpv4=false derp=#1 portmap= link="" firewallmode="ipt-default"}
+2024/05/11 22:19:48 magicsock: 1 active derp conns: derp-1=cr0s,wr0s
+2024/05/11 22:19:48 magicsock: endpoints changed: 172.172.37.59:1025 (stun), 172.16.5.4:35465 (local), 172.17.0.1:35465 (local)
+2024/05/11 22:19:48 Switching ipn state Starting -> Running (WantRunning=true, nm=true)
+2024/05/11 22:19:48 derphttp.Client.Connect: connecting to derp-1 (nyc)
+2024/05/11 22:19:48 magicsock: derp-1 connected; connGen=1
+2024/05/11 22:19:48 health("overall"): ok
+2024/05/11 22:21:15 wgengine: idle peer [duEiD] now active, reconfiguring WireGuard
+2024/05/11 22:21:15 wgengine: Reconfig: configuring userspace WireGuard config (with 1/3 peers)
+2024/05/11 22:21:15 Accept: TCP{100.65.135.106:51120 > 100.125.205.98:25565} 52 tcp ok
+2024/05/11 22:21:15 Accept: TCP{100.125.205.98:25565 > 100.65.135.106:51120} 52 ok out
+2024/05/11 22:21:15 magicsock: disco: node [duEiD] d:a34f7c5b65e771e5 now using 181.26.252.30:41641 mtu=1360 tx=b666da158c16
+2024/05/11 22:21:15 Accept: TCP{100.65.135.106:51120 > 100.125.205.98:25565} 40 tcp non-syn
