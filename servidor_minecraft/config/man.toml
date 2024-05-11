@@ -36,6 +36,8 @@
 	stage2_spawn_rate = 900.0
 	#if true, the man will use the old chase mechanic
 	old_stalk_mechanic = false
+	#the structures as well as the dimension will be disabled and the man spawns normally in your world. Create a new world when disabled
+	legacy_man = false
 
 [Client]
 	#if true, the mod will use shaders to enhance the gameplay (Can be performance heavy!)
