@@ -2832,10 +2832,12 @@
       "spider_nest": "2024-04-28 05:44:38 +0000",
       "wasteland": "2024-04-28 05:46:13 +0000",
       "lush_desert": "2024-04-28 05:45:10 +0000",
+      "redwood_forest": "2024-05-12 01:02:21 +0000",
       "dune_beach": "2024-05-11 02:02:16 +0000",
       "seasonal_forest": "2024-05-12 00:38:52 +0000",
       "volcano": "2024-04-28 05:52:44 +0000",
       "rocky_rainforest": "2024-04-28 05:25:39 +0000",
+      "lavender_field": "2024-05-12 01:02:06 +0000",
       "fir_clearing": "2024-05-12 00:37:16 +0000",
       "pumpkin_patch": "2024-05-12 00:38:43 +0000",
       "grassland": "2024-04-28 05:21:15 +0000",
@@ -4832,6 +4834,18 @@
     },
     "done": true
   },
+  "nova_structures:adventure/find_tavern": {
+    "criteria": {
+      "nova_structures:tavern_spruce": "2024-05-12 00:51:10 +0000"
+    },
+    "done": true
+  },
+  "nova_structures:root": {
+    "criteria": {
+      "nova_structures:adventure/find_tavern": "2024-05-12 00:51:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2024-05-12 00:52:23 +0000"
@@ -4850,21 +4864,9 @@
     },
     "done": true
   },
-  "nova_structures:adventure/find_tavern": {
-    "criteria": {
-      "nova_structures:tavern_spruce": "2024-05-12 00:51:10 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2024-05-12 00:52:23 +0000"
-    },
-    "done": true
-  },
-  "nova_structures:root": {
-    "criteria": {
-      "nova_structures:adventure/find_tavern": "2024-05-12 00:51:10 +0000"
     },
     "done": true
   },
