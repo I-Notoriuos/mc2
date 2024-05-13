@@ -1,0 +1,7 @@
+# Default configuration
+placeholders:
+  # The server name to display in the welcome message
+  server_name: "&aLos pinguinos"
+
+  # The welcome message to display to the player
+  welcome_message: "&fHola, %player%! queres pito?"

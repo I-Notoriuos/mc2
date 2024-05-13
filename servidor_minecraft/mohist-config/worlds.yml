@@ -1,0 +1,46 @@
+worlds:
+  '1':
+    worldborder: 5.9999968E7
+    seed: -8591156681626822980
+    environment: NORMAL
+    name: '1'
+    info: -/-
+    difficulty: EASY
+    mohist: false
+    keepspawninmemory: true
+  DIM-1:
+    worldborder: 5.9999968E7
+  glacio:
+    worldborder: 5.9999968E7
+  mercury:
+    worldborder: 5.9999968E7
+  twilight_forest:
+    worldborder: 5.9999968E7
+  DIM1:
+    worldborder: 5.9999968E7
+  mercury_orbit:
+    worldborder: 5.9999968E7
+  moon:
+    worldborder: 5.9999968E7
+  otherside:
+    worldborder: 5.9999968E7
+  halucination:
+    worldborder: 5.9999968E7
+  mars_orbit:
+    worldborder: 5.9999968E7
+  venus_orbit:
+    worldborder: 5.9999968E7
+  venus:
+    worldborder: 5.9999968E7
+  mars:
+    worldborder: 5.9999968E7
+  moon_orbit:
+    worldborder: 5.9999968E7
+  past:
+    worldborder: 5.9999968E7
+  earth_orbit:
+    worldborder: 5.9999968E7
+  the_aether:
+    worldborder: 5.9999968E7
+  glacio_orbit:
+    worldborder: 5.9999968E7

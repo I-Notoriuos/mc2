@@ -1,13 +1,850 @@
-[13May2024 19:03:47.485] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[13May2024 19:03:47.489] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.2 by Microsoft; OS Linux arch amd64 version 6.5.0-1019-azure
-[13May2024 19:03:48.540] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
-[13May2024 19:03:48.590] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/mc2/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
-[13May2024 19:03:49.106] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/mc2/servidor_minecraft/libraries/net/minecraftforge/fmlcore/1.20.1-47.2.0/fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
-[13May2024 19:03:49.107] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/mc2/servidor_minecraft/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.2.0/javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[13May2024 19:03:49.109] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/mc2/servidor_minecraft/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.2.0/lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[13May2024 19:03:49.110] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/mc2/servidor_minecraft/libraries/net/minecraftforge/mclanguage/1.20.1-47.2.0/mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[13May2024 19:03:49.491] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select two dependency jars from JarJar which have the same identification: Mod File:  and Mod File: . Using Mod File: 
-[13May2024 19:03:49.493] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: resourcefullib. Using Mod File: /workspaces/mc2/servidor_minecraft/mods/resourcefullib-forge-1.20.1-2.1.24.jar
-[13May2024 19:03:49.493] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: geckolib. Using Mod File: /workspaces/mc2/servidor_minecraft/mods/geckolib-forge-1.20.1-4.4.2.jar
-[13May2024 19:03:49.494] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: curios. Using Mod File: /workspaces/mc2/servidor_minecraft/mods/curios-forge-5.7.2+1.20.1.jar
-[13May2024 19:03:49.494] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 17 dependencies adding them to mods collection
+[19:14:57] [main/INFO] [cpw.mods.modlauncher.Launcher]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.2.32, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, nogui]
+[19:14:57] [main/INFO] [cpw.mods.modlauncher.Launcher]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.2 by Microsoft; OS Linux arch amd64 version 6.5.0-1019-azure
+[19:15:02] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler]: ImmediateWindowProvider not loading because launch target is forgeserver
+[19:15:03] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/mc2/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%23112!/ Service=ModLauncher Env=SERVER
+[19:15:04] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector]: Attempted to select two dependency jars from JarJar which have the same identification: Mod File:  and Mod File: . Using Mod File: 
+[19:15:04] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector]: Attempted to select a dependency jar for JarJar which was passed in as source: resourcefullib. Using Mod File: /workspaces/mc2/servidor_minecraft/mods/resourcefullib-forge-1.20.1-2.1.24.jar
+[19:15:04] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector]: Attempted to select a dependency jar for JarJar which was passed in as source: geckolib. Using Mod File: /workspaces/mc2/servidor_minecraft/mods/geckolib-forge-1.20.1-4.4.2.jar
+[19:15:04] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector]: Attempted to select a dependency jar for JarJar which was passed in as source: curios. Using Mod File: /workspaces/mc2/servidor_minecraft/mods/curios-forge-5.7.2+1.20.1.jar
+[19:15:04] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator]: Found 17 dependencies adding them to mods collection
+[19:15:13] [main/INFO] [mixin]: Compatibility level set to JAVA_17
+[19:15:13] [main/ERROR] [mixin]: Mixin config palladiumcore-common.mixins.json does not specify "minVersion" property
+[19:15:13] [main/ERROR] [mixin]: Mixin config palladiumcore.mixins.json does not specify "minVersion" property
+[19:15:13] [main/ERROR] [mixin]: Mixin config azurelib.mixins.json does not specify "minVersion" property
+[19:15:13] [main/ERROR] [mixin]: Mixin config azurelib.forge.mixins.json does not specify "minVersion" property
+[19:15:13] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler]: Launching target 'forgeserver' with arguments [nogui]
+[19:15:13] [main/INFO] [ModernFix]: Loaded configuration file for ModernFix 5.16.1+mc1.20.1: 78 options available, 0 override(s) found
+[19:15:13] [main/INFO] [ModernFix]: Applying Nashorn fix
+[19:15:13] [main/INFO] [ModernFix]: Applied Forge config corruption patch
+[19:15:13] [main/WARN] [mixin]: Reference map 'pantheonsent-forge-refmap.json' for pantheonsent.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:13] [main/WARN] [mixin]: Reference map 'CerbonsAPI-Forge-1.20.1-forge-refmap.json' for cerbons_api.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:13] [main/WARN] [mixin]: Reference map 'nitrogen_internals.refmap.json' for nitrogen_internals.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:13] [main/WARN] [mixin]: Reference map 'smallships-forge-refmap.json' for smallships.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:13] [main/WARN] [mixin]: Reference map 'graveyard-FORGE-forge-refmap.json' for graveyard-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:13] [main/WARN] [mixin]: Reference map 'simplyswords-forge-refmap.json' for simplyswords.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:13] [main/WARN] [mixin]: Reference map 'mes-forge-refmap.json' for mes-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:13] [main/WARN] [mixin]: Reference map 'coroutil.refmap.json' for coroutil.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:13] [main/WARN] [mixin]: Reference map 'mvs-forge-refmap.json' for mvs-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:14] [main/INFO] [Puzzles Lib]: Loading 147 mods:
+	- abomination 1.0.0
+	- ad_astra 1.15.18
+	- aether 1.20.1-1.3.1-neoforge
+	- alexscaves 1.1.4
+	- alexsmobs 1.22.8
+	- amplifiednether 1.2.4
+	- architectury 9.2.14
+	- ars_creo 4.0.1
+	- ars_nouveau 4.9.0
+	- ati_structures 1.0.0
+	- azurelib 2.0.20
+	- balm 7.2.2
+	- betterarcheology 1.1.7-1.20.1
+	- bettercombat 1.8.4+1.20.1
+	- betterdeserttemples 1.20-Forge-3.0.3
+	- betterdungeons 1.20-Forge-4.0.3
+	- betterendisland 1.20-Forge-2.0.6
+	- betterfortresses 1.20-Forge-2.0.5
+	- betterjungletemples 1.20-Forge-2.0.4
+	- bettermineshafts 1.20-Forge-4.0.4
+	- betteroceanmonuments 1.20-Forge-3.0.4
+	- betterstrongholds 1.20-Forge-4.0.3
+	- biomesoplenty 18.0.0.598
+	- bosses_of_mass_destruction 1.1.2
+	- botarium 2.3.3
+	- capycraft 0.0.1-1.20.1
+	- cataclysm 1.99.2
+	- cave_dweller 1.6.4
+	- cerbons_api 1.1.0
+	- charmofundying 6.5.0+1.20.1
+	- chefsdelight 1.0.3-forge-1.20.1
+	- chunky 1.3.136
+	- citadel 2.5.4
+	- cloth_config 11.1.118
+	- clumps 12.0.0.4
+	- collective 7.49
+	- comforts 6.3.5+1.20.1
+	- coroutil 1.20.1-1.3.6
+	- corpse 1.20.1-1.0.12
+	- create 0.5.1.f
+	- create_new_age 1.1.2
+	- creativecore 2.11.24
+	- creeperoverhaul 3.0.2
+	- cristellib 1.1.5
+	- ctov 3.4.3
+	- cumulus_menus 1.20.1-1.0.0-neoforge
+	- curios 5.7.2+1.20.1
+	- darktimer 1.0.9
+	- deep_dark_regrowth 1.2.5.1
+	- deeperdarker 1.2.1
+	- dungeons_arise 2.1.58-1.20.x
+	- dungeons_arise_seven_seas 1.0.2
+	- easymagic 8.0.1
+	- enchantinginfuser 8.0.2
+	- endermanoverhaul 1.0.4
+	- epicsamurai 0.0.42-1.20.1-neo
+	- explorerscompass 1.20.1-1.3.3-forge
+	- exposure 1.5.1
+	- farmersdelight 1.20.1-1.2.4
+	- ferritecore 6.0.1
+	- fishingreal 1.20.1-1.7.1
+	- flywheel 0.6.10-7
+	- followersteleporttoo 2.4
+	- forge 47.2.32
+	- forgivingvoid 10.0.0
+	- formations 1.0.2
+	- formationsnether 1.0.3
+	- framework 0.6.27
+	- friendsandfoes 2.0.10
+	- geckolib 4.4.2
+	- geophilic 2.2.0-mc1.20u1.20.2
+	- gnumus 1.0.0
+	- graveyard 3.1
+	- guardvillagers 1.20.1-1.6.4
+	- healingcampfire 5.3
+	- hoporp 1.3.7
+	- iceandfire 2.1.13-1.20.1-beta-4
+	- illagerinvasion 8.0.4
+	- immersive_aircraft 0.7.5+1.20.1
+	- infinity_cave 0.4
+	- jeg 0.3.1
+	- legendary_monsters 1.20.1
+	- lionfishapi 1.8
+	- man 1.2.4
+	- man_of_many_planes 0.0.3+1.20.1
+	- medieval_buildings 1.0.2
+	- medievalend 1.0.1
+	- mes 1.3.1-1.20-forge
+	- minecraft 1.20.1
+	- mixinextras 0.2.0-beta.9
+	- moblassos 8.0.1
+	- modernfix 5.16.1+mc1.20.1
+	- mohist 1.20.1
+	- mokels_boss_mantyd 1.0.0
+	- moremobs 1.5.1+mod
+	- moremobvariants 1.2.2
+	- mr_blossom_blade 1.2
+	- mr_stellarity 2.0d
+	- mr_tidal_towns 1.3
+	- mvs 4.1.2-1.20-forge
+	- netheroverhaul 1.3.6
+	- nethers_exoticism 1.2.7
+	- nitrogen_internals 1.20.1-1.0.7-neoforge
+	- nyctophobia 1.6
+	- nyfsspiders 2.1.1
+	- palladium 4.0.9
+	- palladiumcore 1.0.1
+	- pantheonsent 1.0.3
+	- patchouli 1.20.1-84-FORGE
+	- petnames 3.3
+	- playeranimator 1.0.2-rc1+1.20
+	- plenty_of_golems 1.3.0
+	- puzzlesaccessapi 8.0.7
+	- puzzleslib 8.1.17
+	- realmrpg_skeletons 1.0.3
+	- resourcefulconfig 2.1.2
+	- resourcefullib 2.1.24
+	- sereneseasons 9.0.0.46
+	- sherdsapi 4.0.4
+	- silence_s_defense_tower 2.3.4
+	- simplyswords 1.55.0-1.20.1
+	- smallships 2.0.0-b1.1
+	- sophisticatedbackpacks 3.20.2.1022
+	- sophisticatedcore 0.6.8.567
+	- spectrelib 0.13.15+1.20.1
+	- spelunkers_charm 3.5.9
+	- structory 1.3.4
+	- structorytowers 1.0.6
+	- stupid_weapon_deluxe 1.0.0
+	- t_and_t 0.0NONE
+	- takesapillage 1.0.3
+	- terrablender 3.0.1.4
+	- terralith 2.4.11
+	- totw_modded 1.0.5
+	- trulytreasures 1.20-3.0.0
+	- twilightforest 4.3.2145
+	- villagernames 7.3
+	- villagersplus 3.1
+	- villagesandpillages 1.0.0
+	- visualworkbench 8.0.0
+	- w2pets 1.0
+	- watut 1.20.1-1.1.1
+	- waystones 14.1.3
+	- weaponmaster_ydm 4.2.3
+	- whatareyouvotingfor 1.2.4
+	- yungsapi 1.20-Forge-4.0.4
+	- yungsbridges 1.20-Forge-4.0.3
+[19:15:14] [main/WARN] [mixin]: Reference map 'moblassos.refmap.json' for moblassos.common.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:14] [main/WARN] [mixin]: Reference map 'cristellib-forge-refmap.json' for cristellib.mixins.json could not be read. If this is a development environment you can ignore this message
+[19:15:15] [main/WARN] [mixin]: Error loading class: com/teammetallurgy/aquaculture/entity/AquaFishingBobberEntity (java.lang.ClassNotFoundException: com.teammetallurgy.aquaculture.entity.AquaFishingBobberEntity)
+[19:15:15] [main/WARN] [mixin]: @Mixin target com.teammetallurgy.aquaculture.entity.AquaFishingBobberEntity was not found fishingreal.mixins.json:compat.AquaFishingBobberEntityAccessor
+[19:15:16] [main/WARN] [mixin]: Error loading class: net/minecraft/client/renderer/entity/PhantomRenderer (java.lang.ClassNotFoundException: net.minecraft.client.renderer.entity.PhantomRenderer)
+[19:15:16] [main/WARN] [mixin]: @Mixin target net.minecraft.client.renderer.entity.PhantomRenderer was not found mixins.deeperdarker.json:PhantomRendererMixin
+[19:15:17] [main/INFO] [MixinExtras|Service]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
+[19:15:19] [main/INFO] [net.minecraft.server.Bootstrap]: ModernFix reached bootstrap stage (30.29 s after launch)
+[19:15:19] [main/WARN] [mixin]: @Final field delegatesByName:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[19:15:19] [main/WARN] [mixin]: @Final field delegatesByValue:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[19:15:22] [main/INFO] [net.minecraft.server.Bootstrap]: Vanilla bootstrap took 2954 milliseconds
+[19:15:23] [main/WARN] [mixin]: @Inject(@At("INVOKE_ASSIGN")) Shift.BY=1 on palladiumcore-common.mixins.json:LightningBoltMixin::handler$zzg000$tick exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[19:15:24] [main/WARN] [mixin]: @Final field f_26027_:Lnet/minecraft/world/entity/ai/targeting/TargetingConditions; in guardvillagers.mixins.json:DefendVillageGoalGolemMixin should be final
+[19:15:27] [main/WARN] [mixin]: Static binding violation: PRIVATE @Overwrite method m_47505_ in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
+[19:15:42] [modloading-worker-0/INFO] [Collective]: [Collective] JSON file 'entity_names.json' generation requested by mod 'petnames'.
+[19:15:42] [modloading-worker-0/INFO] [Puzzles Lib]: Constructing common components for illagerinvasion:main
+[19:15:42] [modloading-worker-0/INFO] [Collective]: [Collective] JSON file 'entity_names.json' generation requested by mod 'villagernames'.
+[19:15:42] [modloading-worker-0/INFO] [villagersplus]: Registered JSON trade offer adapter.
+[19:15:43] [modloading-worker-0/WARN] [net.blay09.mods.balm.forge.config.ForgeBalmConfig]: Config field without expected type, will not validate list content (dimensionAllowList in net.blay09.mods.forgivingvoid.ForgivingVoidConfigData)
+[19:15:43] [modloading-worker-0/WARN] [net.blay09.mods.balm.forge.config.ForgeBalmConfig]: Config field without expected type, will not validate list content (dimensionDenyList in net.blay09.mods.forgivingvoid.ForgivingVoidConfigData)
+[19:15:43] [modloading-worker-0/INFO] [create_new_age]: Hello 1.20.1 Create!
+[19:15:43] [modloading-worker-0/INFO] [Collective]: Loading Collective version 7.49.
+[19:15:43] [modloading-worker-0/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:15:43] [modloading-worker-0/INFO] [com.aetherteam.cumulus.Cumulus]: Disabling Cumulus as it is on server.
+[19:15:44] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl]: Registering C2S receiver with id architectury:sync_ids
+[19:15:44] [modloading-worker-0/INFO] [Puzzles Lib]: Constructing common components for enchantinginfuser:main
+[19:15:44] [modloading-worker-0/INFO] [Puzzles Lib]: Constructing common components for easymagic:main
+[19:15:44] [modloading-worker-0/INFO] [Puzzles Lib]: Constructing common components for visualworkbench:main
+[19:15:44] [modloading-worker-0/INFO] [graveyard]: Registered JSON trade offer adapter.
+[19:15:44] [modloading-worker-0/INFO] [azurelib]: Registered azurelib config for auto-sync function
+[19:15:44] [modloading-worker-0/INFO] [coroutil]: forge loader environment detected
+[19:15:44] [modloading-worker-0/INFO] [com.mohistmc.MohistMC]: Mohist mod loading.....
+[19:15:45] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod]: Forge mod loading, version 47.2.32, for MC 1.20.1 with MCP 20230612.114412
+[19:15:45] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge]: MinecraftForge v47.2.32 Initialized
+[19:15:45] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge]: NeoForge v47.2.32 Initialized
+[19:15:45] [modloading-worker-0/INFO] [com.mohistmc.MohistMC]: EventDispatcherRegistry initialized
+[19:15:45] [modloading-worker-0/INFO] [net.tschipcraft.moremobs.forge.Init]: [More Mobs] Registering server started event...
+[19:15:45] [modloading-worker-0/INFO] [Sherds API]: Initializing Sherds API for Forge in a production environment...
+[19:15:46] [modloading-worker-0/INFO] [Puzzles Lib]: Constructing common components for puzzleslib:main
+[19:15:46] [modloading-worker-0/INFO] [Puzzles Lib]: Constructing common components for moblassos:main
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Starting addonpack initialisation...
+[19:15:47] [main/ERROR] [net.minecraft.server.packs.AbstractPackResources]: Couldn't load pack metadata
+com.google.gson.JsonSyntaxException: Missing pack_format, expected to find a Int
+	at net.minecraft.util.GsonHelper.m_13927_(GsonHelper.java:277) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at net.minecraft.server.packs.metadata.pack.PackMetadataSectionSerializer.m_6322_(PackMetadataSectionSerializer.java:15) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at net.minecraft.server.packs.metadata.pack.PackMetadataSectionSerializer.m_6322_(PackMetadataSectionSerializer.java:9) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at net.minecraft.server.packs.AbstractPackResources.m_10214_(AbstractPackResources.java:52) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at net.minecraft.server.packs.AbstractPackResources.m_5550_(AbstractPackResources.java:33) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at net.minecraft.server.packs.repository.Pack.m_246334_(Pack.java:60) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at net.minecraft.server.packs.repository.Pack.m_245429_(Pack.java:35) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at net.threetag.palladium.addonpack.forge.AddonPackManagerImpl$ModPackSource.m_7686_(AddonPackManagerImpl.java:49) ~[palladium-4.0.9+1.20.1-forge.jar%23425!/:4.0.9+1.20.1]
+	at net.minecraft.server.packs.repository.PackRepository.m_10526_(PackRepository.java:39) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at net.minecraft.server.packs.repository.PackRepository.m_10506_(PackRepository.java:31) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at net.threetag.palladium.addonpack.AddonPackManager.beginLoading(AddonPackManager.java:136) ~[palladium-4.0.9+1.20.1-forge.jar%23425!/:4.0.9+1.20.1]
+	at net.threetag.palladium.addonpack.AddonPackManager.startLoading(AddonPackManager.java:54) ~[palladium-4.0.9+1.20.1-forge.jar%23425!/:4.0.9+1.20.1]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at net.minecraftforge.fml.DeferredWorkQueue.lambda$makeRunnable$2(DeferredWorkQueue.java:81) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at net.minecraftforge.fml.DeferredWorkQueue.makeRunnable(DeferredWorkQueue.java:76) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at net.minecraftforge.fml.DeferredWorkQueue.lambda$runTasks$0(DeferredWorkQueue.java:60) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at java.util.concurrent.ConcurrentLinkedDeque.forEach(ConcurrentLinkedDeque.java:1650) ~[?:?]
+	at net.minecraftforge.fml.DeferredWorkQueue.runTasks(DeferredWorkQueue.java:60) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at net.minecraftforge.fml.core.ParallelTransition.lambda$finalActivityGenerator$2(ParallelTransition.java:35) ~[forge-1.20.1-47.2.32-universal.jar%23479!/:?]
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraftforge.fml.ModWorkManager$SyncExecutor.driveOne(ModWorkManager.java:46) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at net.minecraftforge.fml.ModWorkManager$DrivenExecutor.drive(ModWorkManager.java:29) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:224) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$20(ModLoader.java:210) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:210) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:30) ~[forge-1.20.1-47.2.32-universal.jar%23479!/:?]
+	at net.minecraft.server.Main.main(Main.java:165) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.32.jar%23190!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.2.32.jar%23190!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.2.32.jar%23190!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.9.jar%23102!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.9.jar%23102!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.9.jar%23102!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) [modlauncher-10.0.9.jar%23102!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) [modlauncher-10.0.9.jar%23102!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.9.jar%23102!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.9.jar%23102!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?]
+	at com.mohistmc.MohistMCStart.main(MohistMCStart.java:109) [mohist.jar:1.20.1-722]
+[19:15:47] [main/WARN] [net.minecraft.server.packs.repository.Pack]: Missing metadata in pack mod:minecraft
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:abomination as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:ad_astra as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:aether as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:alexscaves as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:alexsmobs as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:amplifiednether as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:architectury as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:ars_creo as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:ars_nouveau as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:ati_structures as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:azurelib as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:balm as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:betterarcheology as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:bettercombat as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:betterdeserttemples as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:betterdungeons as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:betterendisland as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:betterfortresses as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:betterjungletemples as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:bettermineshafts as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:betteroceanmonuments as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:betterstrongholds as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:biomesoplenty as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:bosses_of_mass_destruction as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:botarium as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:capycraft as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:cataclysm as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:cave_dweller as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:cerbons_api as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:charmofundying as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:chefsdelight as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:chunky as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:citadel as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:cloth_config as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:clumps as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:collective as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:comforts as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:coroutil as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:corpse as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:create as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:create_new_age as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:creativecore as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:creeperoverhaul as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:cristellib as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:ctov as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:cumulus_menus as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:curios as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:darktimer as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:deep_dark_regrowth as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:deeperdarker as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:dungeons_arise as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:dungeons_arise_seven_seas as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:easymagic as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:enchantinginfuser as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:endermanoverhaul as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:epicsamurai as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:explorerscompass as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:exposure as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:farmersdelight as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:ferritecore as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:fishingreal as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:flywheel as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:followersteleporttoo as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:forge as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:forgivingvoid as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:formations as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:formationsnether as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:framework as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:friendsandfoes as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:geckolib as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:geophilic as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:gnumus as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:graveyard as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:guardvillagers as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:healingcampfire as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:hoporp as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:iceandfire as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:illagerinvasion as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:immersive_aircraft as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:infinity_cave as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:jeg as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:legendary_monsters as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:lionfishapi as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:man as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:man_of_many_planes as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:medieval_buildings as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:medievalend as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:mes as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:mixinextras as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:moblassos as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:modernfix as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:mohist as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:mokels_boss_mantyd as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:moremobs as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:moremobvariants as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:mr_blossom_blade as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:mr_stellarity as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:mr_tidal_towns as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:mvs as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:netheroverhaul as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:nethers_exoticism as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:nitrogen_internals as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:nyctophobia as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:nyfsspiders as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:palladium as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:palladiumcore as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:pantheonsent as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:patchouli as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:petnames as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:playeranimator as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:plenty_of_golems as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:puzzlesaccessapi as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:puzzleslib as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:realmrpg_skeletons as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:resourcefulconfig as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:resourcefullib as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:sereneseasons as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:sherdsapi as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:silence_s_defense_tower as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:simplyswords as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:smallships as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:sophisticatedbackpacks as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:sophisticatedcore as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:spectrelib as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:spelunkers_charm as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:structory as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:structorytowers as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:stupid_weapon_deluxe as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:t_and_t as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:takesapillage as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:terrablender as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:terralith as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:totw_modded as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:trulytreasures as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:twilightforest as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:villagernames as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:villagersplus as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:villagesandpillages as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:visualworkbench as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:w2pets as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:watut as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:waystones as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:weaponmaster_ydm as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:whatareyouvotingfor as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:yungsapi as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [net.threetag.palladium.Palladium]: Skipping mod:yungsbridges as it's not been marked as an addonpack
+[19:15:47] [main/ERROR] [net.threetag.palladium.Palladium]: Cannot invoke "net.threetag.palladium.addonpack.PackData.getId()" because "packData" is null
+[19:15:47] [main/INFO] [ModernFix]: Invalidating pack caches
+[19:15:47] [main/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager]: Reloading ResourceManager: abomination 1.2, 1.20.1.jar, ad_astra-forge-1.20.1-1.15.18.jar, aether-1.20.1-1.3.1-neoforge.jar, alexscaves-1.1.4.jar, alexsmobs-1.22.8.jar, Amplified_Nether_1.20.4_v1.2.4.jar, architectury-9.2.14-forge.jar, ars_creo-1.20.1-4.0.1.jar, ars_nouveau-1.20.1-4.9.0-all.jar, ati_structures1.0.0+1.20+ Forge.jar, azurelib-neo-1.20.1-2.0.20.jar, balm-forge-1.20.1-7.2.2.jar, betterarcheology-1.1.7-1.20.1.jar, bettercombat-forge-1.8.4+1.20.1.jar, YungsBetterDesertTemples-1.20-Forge-3.0.3.jar, YungsBetterDungeons-1.20-Forge-4.0.3.jar, YungsBetterEndIsland-1.20-Forge-2.0.6.jar, YungsBetterNetherFortresses-1.20-Forge-2.0.5.jar, YungsBetterJungleTemples-1.20-Forge-2.0.4.jar, YungsBetterMineshafts-1.20-Forge-4.0.4.jar, YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar, YungsBetterStrongholds-1.20-Forge-4.0.3.jar, BiomesOPlenty-1.20.1-18.0.0.598.jar, BOSSESMD-Forge-1.20.1-1.1.2.jar, botarium-forge-1.20.1-2.3.3.jar, capycraft-0.0.1-1.20.1.jar, L_Enders_Cataclysm-1.99.2 -1.20.1.jar, cave_dweller-1.20.1-1.6.4.jar, CerbonsAPI-Forge-1.20.1-1.1.0.jar, charmofundying-forge-6.5.0+1.20.1.jar, chefs-delight-1.0.3-forge-1.20.1.jar, Chunky-1.3.136.jar, citadel-2.5.4-1.20.1.jar, cloth-config-11.1.118-forge.jar, Clumps-forge-1.20.1-12.0.0.4.jar, collective-1.20.1-7.49.jar, comforts-forge-6.3.5+1.20.1.jar, coroutil-forge-1.20.1-1.3.6.jar, corpse-forge-1.20.1-1.0.12.jar, create-1.20.1-0.5.1.f.jar, create-new-age-forge-1.20.1-1.1.2.jar, CreativeCore_FORGE_v2.11.24_mc1.20.1.jar, creeperoverhaul-3.0.2-forge.jar, cristellib-1.1.5-forge.jar, ctov-forge-3.4.3.jar, cumulus_menus-1.20.1-1.0.0-neoforge.jar, curios-forge-5.7.2+1.20.1.jar, darktimer-forge-1.20.1-1.0.9.jar, Deep Dark Regrowth 1.2.5.1 - 1.20.1.jar, deeperdarker-forge-1.20.1-1.2.1.jar, DungeonsArise-1.20.x-2.1.58-release.jar, DungeonsAriseSevenSeas-1.20.x-1.0.2-forge.jar, EasyMagic-v8.0.1-1.20.1-Forge.jar, EnchantingInfuser-v8.0.2-1.20.1-Forge.jar, endermanoverhaul-forge-1.20.1-1.0.4.jar, epicsamurai-0.0.42-1.20.1-neo.jar, ExplorersCompass-1.20.1-1.3.3-forge.jar, exposure-1.20.1-1.5.1-forge.jar, FarmersDelight-1.20.1-1.2.4.jar, ferritecore-6.0.1-forge.jar, Fishingreal-1.20.1-1.7.1.jar, flywheel-forge-1.20.1-0.6.10-7.jar, followersteleporttoo-1.20.1-2.4.jar, forge-1.20.1-47.2.32-universal.jar, forgivingvoid-forge-1.20-10.0.0.jar, formations-1.0.2-forge-mc1.20.jar, formationsnether-1.0.3.jar, framework-forge-1.20.1-0.6.27.jar, friendsandfoes-forge-mc1.20.1-2.0.10.jar, geckolib-forge-1.20.1-4.4.2.jar, geophilic-v2.2.0-mc1.20u1.20.2.jar, gnumus_settlement_Forge1.20.1_v1.0.jar, The_Graveyard_3.1_(FORGE)_for_1.20.1.jar, guardvillagers-1.20.1-1.6.4.jar, healingcampfire-1.20.1-5.3.jar, HopoBetterRuinedPortals-[1.20-1.20.2]-1.3.7 (1).jar, iceandfire-2.1.13-1.20.1-beta-4.jar, IllagerInvasion-v8.0.4-1.20.1-Forge.jar, immersive_aircraft-0.7.5+1.20.1-forge.jar, infinity_cave-0.4-1.20.1-FORGE.jar, JustEnoughGuns-0.3.1-1.20.1.jar, legendarymonsters-1.0.4.jar, lionfishapi-1.8.jar, hacete hombre 2.jar, man_of_many_planes-0.0.3+1.20.1-forge.jar, medieval_buildings-forge-1.0.2.jar, forge-medievalend-1.0.1.jar, mes-1.3.1-1.20-forge.jar, mixinextras-forge-0.2.0-beta.9.jar, MobLassos-v8.0.1-1.20.1-Forge.jar, modernfix-forge-5.16.1+mc1.20.1.jar, forge-1.20.1-47.2.32-universal.jar, mokels bossfight kinora 1.0.jar, more_mobs-v1.5.1-mc1.14x-1.20x-mod.jar, moremobvariants-forge+1.20-1.2.2.jar, blossom-blade-1.2.jar, Stellarity-v2-0e.jar, tidal-towns-1.3.jar, mvs-4.1.2-1.20-forge.jar, Nether's Overhaul-1.20.1_V1.3.6.jar, nether-s-exoticism-1.20.1-1.2.7.jar, nitrogen_internals-1.20.1-1.0.7-neoforge.jar, Nyctophobia_1.6_(FORGE)_for_1.20+.jar, nyfsspiders-forge-1.20.1-2.1.1.jar, palladium-4.0.9+1.20.1-forge.jar, palladiumcore-forge-1.0.1+1.20.1-forge.jar, pantheonsent-1.0.3+1.20.1-forge.jar, Patchouli-1.20.1-84-FORGE.jar, petnames-1.20.1-3.3.jar, player-animation-lib-forge-1.0.2-rc1+1.20.jar, Plenty_of_Golems-V1.3.1-Forge_1.20.1.jar, puzzlesaccessapi-forge-8.0.7.jar, PuzzlesLib-v8.1.17-1.20.1-Forge.jar, realmrpg_fallen_adventurers_1.0.3_forge_1.20.1.jar, resourcefulconfig-forge-1.20.1-2.1.2.jar, resourcefullib-forge-1.20.1-2.1.24.jar, SereneSeasons-1.20.1-9.0.0.46.jar, sherdsapi-4.0.4+Forge.jar, Silence's Turrets.jar, simplyswords-forge-1.55.0-1.20.1.jar, smallships-forge-1.20.1-2.0.0-b1.1.jar, sophisticatedbackpacks-1.20.1-3.20.2.1022.jar, sophisticatedcore-1.20.1-0.6.8.567.jar, spectrelib-forge-0.13.15+1.20.1.jar, SpelunkersCharm-3.5.9-1.20.1.jar, Structory_1.20.2_v1.3.4.jar, Structory_Towers_1.20.4_v1.0.6.jar, stupid_weapon_deluxe-1.0.0-forge-1.20.1.jar, Towns-and-Towers-1.12-Fabric+Forge.jar, takesapillage-1.0.3-1.20.1.jar, TerraBlender-forge-1.20.1-3.0.1.4.jar, Terralith_1.20.4_v2.4.11.jar, totw_modded-forge-1.20.1-1.0.5.jar, trulytreasures-1.20-3.0.0-forge.jar, twilightforest-1.20.1-4.3.2145-universal.jar, villagernames-1.20.1-7.3.jar, VillagersPlus_3.1_(FORGE)_for_1.20.1.jar, villagesandpillages-forge-mc1.20.1-1.0.0.jar, VisualWorkbench-v8.0.0-1.20.1-Forge.jar, WaystonesTeleportPets-1.20-1.20.1--1.2.jar, watut-forge-1.20.1-1.1.1.jar, waystones-forge-1.20-14.1.3.jar, weaponmaster_ydm-forge-1.20.1-4.2.3.jar, whatareyouvotingfor2023-1.20.1-1.2.4.jar, YungsApi-1.20-Forge-4.0.4.jar, YungsBridges-1.20-Forge-4.0.3.jar
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack creative_mode_tab
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack armor materials
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack tool tiers
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack block
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack item
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack suit_set
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack particle_type
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack point_of_interest_type
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack villager_profession
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack accessory slots
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Registered 0 addonpack accessories
+[19:15:48] [main/INFO] [net.threetag.palladium.Palladium]: Finished addonpack initialisation!
+[19:15:52] [main/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:15:53] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec]: Configuration file /workspaces/mc2/servidor_minecraft/config/smallships-common.toml is not correct. Correcting
+[19:15:53] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec]: Incorrect key schematicVersion was corrected from 4 to its default, 4. This seems to be an error.
+[19:15:53] [modloading-worker-0/INFO] [net.yeswoman.capycraft.CapyCraft]: HELLO FROM COMMON SETUP
+[19:15:53] [modloading-worker-0/ERROR] [patchouli]: Failed to load book ars_creo:artificers_notes defined by mod ars_creo, skipping
+java.lang.IllegalArgumentException: Book ars_creo:artificers_notes has use_resource_pack set to false. This behaviour was removed in 1.20. The book author should enable this flag and move all book contents clientside to /assets/, leaving the book.json in /data/. See https://vazkiimods.github.io/Patchouli/docs/upgrading/upgrade-guide-120 for details.
+	at vazkii.patchouli.common.book.Book.<init>(Book.java:145) ~[Patchouli-1.20.1-84-FORGE.jar%23427!/:1.20.1-84-FORGE]
+	at vazkii.patchouli.common.book.BookRegistry.loadBook(BookRegistry.java:90) ~[Patchouli-1.20.1-84-FORGE.jar%23427!/:1.20.1-84-FORGE]
+	at vazkii.patchouli.common.book.BookRegistry.lambda$init$3(BookRegistry.java:75) ~[Patchouli-1.20.1-84-FORGE.jar%23427!/:1.20.1-84-FORGE]
+	at java.util.HashMap.forEach(HashMap.java:1429) ~[?:?]
+	at vazkii.patchouli.common.book.BookRegistry.init(BookRegistry.java:70) ~[Patchouli-1.20.1-84-FORGE.jar%23427!/:1.20.1-84-FORGE]
+	at vazkii.patchouli.forge.common.ForgeModInitializer.onInitialize(ForgeModInitializer.java:76) ~[Patchouli-1.20.1-84-FORGE.jar%23427!/:1.20.1-84-FORGE]
+	at vazkii.patchouli.forge.common.__ForgeModInitializer_onInitialize_FMLCommonSetupEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%23149!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:319) ~[eventbus-6.0.5.jar%23149!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:299) ~[eventbus-6.0.5.jar%23149!/:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:155) ~[javafmllanguage-1.20.1-47.2.32.jar%23476!/:?]
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$10(ModContainer.java:124) ~[fmlcore-1.20.1-47.2.32.jar%23475!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[19:15:53] [modloading-worker-0/INFO] [net.tschipcraft.moremobs.forge.InitLegacy]: [More Mobs] Loaded More Mobs by Tschipcraft successfully!
+[19:15:53] [main/INFO] [terrablender]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[19:15:53] [main/INFO] [terrablender]: Registered region minecraft:nether to index 0 for type NETHER
+[19:15:53] [main/INFO] [terrablender]: Registered region nyctophobia:biome_provider to index 1 for type OVERWORLD
+[19:15:53] [main/INFO] [Framework]: Registered synced data key jeg:aiming for minecraft:player
+[19:15:53] [main/INFO] [Framework]: Registered synced data key jeg:reloading for minecraft:player
+[19:15:53] [main/INFO] [Framework]: Registered synced data key jeg:shooting for minecraft:player
+[19:15:53] [main/INFO] [terrablender]: Registered region biomesoplenty:overworld_primary to index 2 for type OVERWORLD
+[19:15:53] [main/INFO] [terrablender]: Registered region biomesoplenty:overworld_secondary to index 3 for type OVERWORLD
+[19:15:53] [main/INFO] [terrablender]: Registered region biomesoplenty:overworld_rare to index 4 for type OVERWORLD
+[19:15:53] [main/INFO] [terrablender]: Registered region biomesoplenty:nether_common to index 1 for type NETHER
+[19:15:53] [main/INFO] [terrablender]: Registered region biomesoplenty:nether_rare to index 2 for type NETHER
+[19:15:53] [Thread-0/INFO] [ModernFix]: Please use /mfsrc to reload any changed mod config files
+[19:15:53] [main/INFO] [terrablender]: Registered region ars_nouveau:overworld to index 5 for type OVERWORLD
+[19:15:54] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[19:15:55] [main/INFO] [ModernFix]: Bypassed Mojang DFU
+[19:15:55] [main/ERROR] [net.minecraft.server.packs.VanillaPackResourcesBuilder]: File /addon/.mcassetsroot does not exist in classpath
+[19:15:55] [main/ERROR] [Cristel Lib]: Cristel Lib Config Pack has no data
+[19:15:55] [main/WARN] [Cristel Lib]: T&T Waystone Patch Pack accepted!
+[19:16:02] [main/INFO] [com.github.alexthe666.alexsmobs.AlexsMobs]: Adding datapack listener capsid_recipes
+[19:16:07] [Worker-Main-2/ERROR] [net.minecraft.world.level.storage.loot.functions.ExplorationMapFunction]: Error while parsing loot table decoration entry. Found jungle_temple. Defaulting to MANSION
+[19:16:09] [Worker-Main-2/ERROR] [net.minecraft.world.level.storage.loot.functions.ExplorationMapFunction]: Error while parsing loot table decoration entry. Found jungle_temple. Defaulting to MANSION
+[19:16:09] [main/INFO] [net.threetag.palladium.Palladium]: Loaded 0 loot table modifications
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_rover}.pools[0].entries[0].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_engineer}.pools[0].entries[1].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_rover}.pools[0].entries[1].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_trooper}.pools[0].entries[0].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_trooper}.pools[0].entries[3].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_trooper}.pools[0].entries[1].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_trooper}.pools[0].entries[2].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_engineer}.pools[0].entries[3].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_engineer}.pools[0].entries[2].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_rover}.pools[0].entries[2].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:09] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager]: Found loot table element validation problem in {loot_tables:stupid_weapon_deluxe:entities/chkn_engineer}.pools[0].entries[0].condition[0]: Parameters [<parameter minecraft:tool>] are not provided in this context
+[19:16:10] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager]: Loaded 71 recipes
+[19:16:10] [main/ERROR] [net.minecraft.server.ServerAdvancementManager]: Parsing error loading custom advancement explosion_rebuilder:click_bed: Failed to parse 'location' field
+[19:16:10] [main/ERROR] [net.minecraft.advancements.AdvancementList]: Couldn't load advancement bld-moon:many_nights: Task Advancement{parentId=blazeandcave:challenges/the_world_is_ending, display=net.minecraft.advancements.DisplayInfo@1d449fc6, rewards=AdvancementRewards{experience=10000, loot=[], recipes=[], function=net.minecraft.commands.CommandFunction$CacheableFunction@2b28aec}, criteria={Long Night=net.minecraft.advancements.Criterion@365c068e}, requirements=[[Long Night]], sends_telemetry_event=false}
+[19:16:10] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 5796 advancements
+[19:16:10] [main/INFO] [net.threetag.palladium.Palladium]: Loaded 2 powers
+[19:16:10] [main/INFO] [net.threetag.palladium.Palladium]: Loaded 0 item powers
+[19:16:10] [main/INFO] [net.threetag.palladium.Palladium]: Loaded 0 suit set powers
+[19:16:10] [main/INFO] [villagersplus]: Deserializing default trades of profession: villagersplus:alchemist
+[19:16:10] [main/INFO] [villagersplus]: Deserializing default trades of profession: villagersplus:horticulturist
+[19:16:10] [main/INFO] [villagersplus]: Deserializing default trades of profession: villagersplus:occultist
+[19:16:10] [main/INFO] [villagersplus]: Deserializing default trades of profession: villagersplus:oceanographer
+[19:16:10] [main/INFO] [io.github.mortuusars.exposure.data.LensesDataLoader]: Loading exposure lenses:
+[19:16:10] [main/INFO] [io.github.mortuusars.exposure.data.LensesDataLoader]: Lens [exposure:spyglass, FocalRange[min=55, max=200]] added.
+[19:16:10] [main/INFO] [twilightforest]: Loaded 9 Stalactite configs!
+[19:16:10] [main/INFO] [koala.fishingreal.FishingManager]: Loaded 4 fish conversions
+[19:16:10] [main/INFO] [top.theillusivec4.curios.Curios]: Loaded 19 curio slots
+[19:16:10] [main/ERROR] [top.theillusivec4.curios.Curios]: curios:necklace is not a registered slot type!
+[19:16:10] [main/INFO] [top.theillusivec4.curios.Curios]: Loaded 9 curio entities
+[19:16:10] [main/INFO] [com.github.nyuppo.MoreMobVariants]: Reloading config...
+[19:16:10] [main/WARN] [net.minecraft.core.MappedRegistry]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:worldgen/biome] are present in data pack: totw_modded:has_structure/everbright_tower, totw_modded:has_structure/everdawn_tower, totw_modded:has_structure/ratlantis_tower
+[19:16:11] [main/WARN] [net.minecraftforge.registries.NamespacedWrapper]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:block] are present in data pack: minecraft:placeable_blocks_1_20_4
+[19:16:11] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting minecraft server version 1.20.1
+[19:16:11] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Loading properties
+[19:16:11] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Default game type: SURVIVAL
+[19:16:11] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Generating keypair
+[19:16:11] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting Minecraft server on *:25565
+[19:16:11] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener]: Using epoll channel type
+[19:16:12] [Server thread/INFO] [Minecraft]: This server is running Mohist version 1.20.1-722 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT, Forge version 47.2.32, NeoForge version 47.1.105)
+[19:16:13] [Server thread/INFO] []: Finalizing energy block registration
+[19:16:13] [Server thread/INFO] []: Finalizing fluid block registration
+[19:16:13] [Server thread/INFO] [Minecraft]: Debug logging is enabled
+[19:16:13] [Server thread/INFO] []: Server Ping Player Sample Count: 20
+[19:16:13] [Server thread/INFO] [Minecraft]: Using 4 threads for Netty based IO
+[19:16:14] [Server thread/INFO] [org.example.plugin.servergreeter.ServerGreeter]: [ServerGreeter] Loading ServerGreeter v0.1
+[19:16:14] [Server thread/INFO] [Puzzles Lib]: Loading server config for illagerinvasion
+[19:16:14] [Server thread/INFO] [Puzzles Lib]: Loading server config for enchantinginfuser
+[19:16:14] [Server thread/INFO] [Puzzles Lib]: Loading server config for easymagic
+[19:16:14] [Server thread/INFO] [Puzzles Lib]: Loading server config for moblassos
+[19:16:15] [Server thread/INFO] [Framework]: Loading server configs...
+[19:16:16] [Server thread/INFO] [terrablender]: Initialized TerraBlender biomes for level stem minecraft:overworld
+[19:16:16] [Server thread/INFO] [terrablender]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[19:16:16] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Preparing level "1"
+[19:16:17] [Server thread/INFO] []: Finalizing energy item registration
+[19:16:17] [Server thread/INFO] []: Finalizing fluid item registration
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[19:16:19] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:19] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:19] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:19] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:19] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:20] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 100%
+[19:16:20] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 100%
+[19:16:21] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 100%
+[19:16:21] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 3763 ms
+[19:16:21] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:21] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:mercury
+[19:16:21] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:21] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 16%
+[19:16:22] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 41%
+[19:16:22] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 1388 ms
+[19:16:22] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension man:halucination
+[19:16:23] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:23] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 18%
+[19:16:23] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 58%
+[19:16:24] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 1350 ms
+[19:16:24] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:24] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:moon_orbit
+[19:16:24] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:24] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 34%
+[19:16:25] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 963 ms
+[19:16:25] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:25] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension graveyard:past
+[19:16:25] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:25] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 12%
+[19:16:26] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 42%
+[19:16:26] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 1435 ms
+[19:16:26] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:26] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:moon
+[19:16:26] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:27] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 27%
+[19:16:27] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 33%
+[19:16:27] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 1139 ms
+[19:16:27] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:27] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:earth_orbit
+[19:16:27] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:28] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 29%
+[19:16:28] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 77%
+[19:16:28] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 1208 ms
+[19:16:28] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:28] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension deeperdarker:otherside
+[19:16:29] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:29] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 14%
+[19:16:29] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 49%
+[19:16:30] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 82%
+[19:16:30] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 1555 ms
+[19:16:30] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:30] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension aether:the_aether
+[19:16:30] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:31] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 25%
+[19:16:31] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 638 ms
+[19:16:31] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:venus
+[19:16:31] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:31] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 18%
+[19:16:32] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 51%
+[19:16:32] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 87%
+[19:16:32] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 1588 ms
+[19:16:32] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:32] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:mars
+[19:16:32] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:33] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 39%
+[19:16:33] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 772 ms
+[19:16:33] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:33] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:mercury_orbit
+[19:16:33] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:34] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 51%
+[19:16:34] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 704 ms
+[19:16:34] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:34] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:glacio_orbit
+[19:16:34] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:34] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 485 ms
+[19:16:34] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:34] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:glacio
+[19:16:34] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:35] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 36%
+[19:16:35] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 707 ms
+[19:16:35] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:35] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:mars_orbit
+[19:16:35] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:35] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 51%
+[19:16:36] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 789 ms
+[19:16:36] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:36] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension twilightforest:twilight_forest
+[19:16:36] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:36] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 31%
+[19:16:37] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 883 ms
+[19:16:37] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:37] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension minecraft:the_nether
+[19:16:37] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:37] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 7%
+[19:16:37] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 816 ms
+[19:16:37] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:37] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension ad_astra:venus_orbit
+[19:16:37] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:38] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 47%
+[19:16:38] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 819 ms
+[19:16:38] [Server thread/WARN] [yungsapi]: WARNING: block Block{minecraft:lapis_ore} added to BlockStateRandomizer exceeds max probabiltiy of 1!
+[19:16:38] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for dimension minecraft:the_end
+[19:16:38] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 0%
+[19:16:39] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Preparing spawn area: 68%
+[19:16:39] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener]: Time elapsed: 552 ms
+[19:16:39] [Server thread/INFO] [org.example.plugin.servergreeter.ServerGreeter]: [ServerGreeter] Enabling ServerGreeter v0.1
+[19:16:39] [Server thread/INFO] [org.example.plugin.servergreeter.ServerGreeter]: [ServerGreeter] ServerGreeter plugin has been enabled!
+[19:16:39] [Server thread/INFO] [com.mohistmc.plugins.Main]: [Mohist] Enabling Mohist v1.20.1
+[19:16:39] [Server thread/INFO] [Minecraft]: Server permissions file permissions.yml is empty, ignoring it
+[19:16:39] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Done (24.742s)! For help, type "help"
+[19:16:39] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI]: Successfully initialized permission handler forge:default_handler
+[19:16:39] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI]: Forwarding forge permission[forge:default_handler] to bukkit[mohist:permission]
+[19:16:39] [Server thread/INFO] [net.yeswoman.capycraft.CapyCraft]: HELLO from server starting
+[19:16:39] [Server thread/INFO] [net.stardustlabs.amplifiednether.AmplifiedNether]: Thanks for choosing AmplifiedNether!
+[19:16:39] [Server thread/INFO] [net.stardustlabs.structorytowers.StructoryTowers]: Thanks for choosing StructoryTowers!
+[19:16:39] [Server thread/INFO] [net.stardustlabs.structory.Structory]: Thanks for choosing Structory!
+[19:16:39] [Server thread/INFO] [net.stardustlabs.terralith.Terralith]: Thanks for choosing Terralith!
+[19:16:39] [Server thread/INFO] [com.github.nyuppo.MoreMobVariants]: Giving mobs a fresh coat of paint...
+[19:16:39] [Server thread/INFO] [net.Pandarix.betterarcheology.BetterArcheology]: HELLO from server starting
+[19:16:39] [Server thread/INFO] [com.github.alexthe666.iceandfire.IceAndFire]: {iceandfire:fire_dragon_roost=true, iceandfire:fire_lily=true, iceandfire:spawn_dragon_skeleton_fire=true, iceandfire:lightning_dragon_roost=true, iceandfire:spawn_dragon_skeleton_lightning=true, iceandfire:ice_dragon_roost=true, iceandfire:ice_dragon_cave=true, iceandfire:lightning_dragon_cave=true, iceandfire:cyclops_cave=true, iceandfire:spawn_wandering_cyclops=true, iceandfire:spawn_sea_serpent=true, iceandfire:frost_lily=true, iceandfire:hydra_cave=true, iceandfire:lightning_lily=true, iceandfire:pixie_village=true, iceandfire:myrmex_hive_jungle=true, iceandfire:myrmex_hive_desert=true, iceandfire:silver_ore=true, iceandfire:siren_island=true, iceandfire:spawn_dragon_skeleton_ice=true, iceandfire:spawn_stymphalian_bird=true, iceandfire:fire_dragon_cave=true, iceandfire:sapphire_ore=true, iceandfire:spawn_hippocampus=true, iceandfire:spawn_death_worm=true}
+[19:16:39] [Server thread/INFO] [com.github.alexthe666.iceandfire.IceAndFire]: {TROLL_S=true, HIPPOGRYPH=true, AMPHITHERE=true, COCKATRICE=true, TROLL_M=true, DREAD_LICH=true, TROLL_F=true}
+[19:16:39] [Server thread/INFO] [net.bettercombat.logic.WeaponRegistry]: Encoded Weapon Attribute registry size (with package overhead): 198569 bytes (in 20 string chunks with the size of 10000)
+[19:16:39] [Server thread/INFO] [patchouli]: Sending reload packet to clients
+[19:16:39] [Server thread/WARN] [ModernFix]: Dedicated server took 110.726 seconds to load
+[19:25:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Ian9Franco joined the game
+[19:25:23] [Server thread/ERROR] [net.threetag.palladium.Palladium]: Was not able to read user's supporter data! (a6a145e2-6b3f-46f6-9130-feda4cc535f0)
+[19:25:23] [Server thread/INFO] [net.minecraft.server.players.PlayerList]: Ian9Franco[/100.112.58.58:53429] logged in with entity id 863 at ([1]-1955.812049578477, 66.0, -1063.8873794078265)
+[19:26:35] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[19:26:35] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[19:26:35] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl]: Ian9Franco lost connection: Server closed
+[19:26:35] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Ian9Franco left the game.
+[19:26:35] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[19:26:35] [Server console handler/ERROR] [net.minecraft.server.dedicated.DedicatedServer]: Caught previously unhandled exception :
+java.io.IOError: java.io.IOException: Input/output error
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170) ~[jline-reader-3.21.0.jar%23109!/:?]
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110) ~[jline-reader-3.21.0.jar%23109!/:?]
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61) ~[jline-reader-3.21.0.jar%23109!/:?]
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923) ~[jline-reader-3.21.0.jar%23109!/:?]
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956) ~[jline-reader-3.21.0.jar%23109!/:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651) ~[jline-reader-3.21.0.jar%23109!/:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:468) ~[jline-reader-3.21.0.jar%23109!/:?]
+	at net.minecraftforge.server.console.TerminalHandler.handleCommands(TerminalHandler.java:46) ~[forge-1.20.1-47.2.32-universal.jar%23479!/:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:94) ~[server-1.20.1-20230612.114412-srg.jar%23474!/:?]
+Caused by: java.io.IOException: Input/output error
+	at java.io.FileInputStream.read0(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:231) ~[?:?]
+	at org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73) ~[jline-terminal-3.21.0.jar%23110!/:?]
+	at org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62) ~[jline-terminal-3.21.0.jar%23110!/:?]
+	at org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168) ~[jline-terminal-3.21.0.jar%23110!/:?]
+	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57) ~[jline-terminal-3.21.0.jar%23110!/:?]
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:160) ~[jline-reader-3.21.0.jar%23109!/:?]
+	... 8 more
+[19:26:44] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'ServerLevel[1]'/minecraft:overworld
