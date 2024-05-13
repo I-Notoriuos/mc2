@@ -1,0 +1,10 @@
+a6a145e2-6b3f-46f6-9130-feda4cc535f0:
+  location:
+    ==: org.bukkit.Location
+    world: '1'
+    x: -2891.4790511075416
+    y: 74.04843103078097
+    z: -819.6738499719571
+    pitch: 22.724289
+    yaw: -106.61462
+  type: TELEPORT

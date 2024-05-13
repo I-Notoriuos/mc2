@@ -33,7 +33,6 @@
 
 
 
-
 import requests,os
 def download_latest_release(repo_owner,repo_name,download_path='.'):
 	F=f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest";B=requests.get(F);A=''
